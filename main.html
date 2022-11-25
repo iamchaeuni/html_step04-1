@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            line-height: 100px;
+        }
+
+        .header .inner {
+            justify-content: space-between;
+        }
+
+        .header .gnb>ul {
+            gap: 60px;
+        }
+
+        .mainVisual {
+            position: relative;
+            height: 1000px;
+            background: url(./SON.jpg) no-repeat center center/cover;
+        }
+
+        .mainVisual .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mainVisual .inner h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            padding: 0;
+        }
+
+        .mainVisual .inner p {
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 25px;
+            text-align: center;
+            margin: 500px 0 0 0;
+        }
+
+        .mainContent {
+            padding: 100px 0;
+        }
+
+        .mainContent h2 {
+            font-size: 35px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        .mainContent p {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 5px 0 40px 0;
+            text-align: left;
+        }
+
+        .mainContent .inner {
+            display: flex;
+            gap: 30px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mainContent figure {
+            flex: 1;
+        }
+
+        .mainContent figure img {
+            width: 100%;
+        }
+
+        .footer {
+            padding: 50px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer .list {
+            font-size: 0;
+        }
+
+        .footer .list li {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header class="header">
+            <div class="inner flex">
+                <h1>
+                    <a href="/">
+                        <img src="./logo.PNG" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="flex">
+                        <li><a href="">선글라스</a></li>
+                        <li><a href="">안경</a></li>
+                        <li><a href="">콜라보레이션</a></li>
+                        <li><a href="">스타일</a></li>
+                        <li><a href="">브랜드이슈</a></li>
+                        <li><a href="">매장보기</a></li>
+                        <li><a href="">수리서비스</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="mainVisual">
+                <div class="inner">
+                    <p>손흥민과 함께한 새로운 캠페인</p>
+                    <h2>BOLD COLLECTION WITH SON</h2>
+                </div>
+            </section>
+            <section class="mainContent">
+                <div class="inner">
+                    <figure>
+                        <img src="./photo01.webp" alt="">
+                        <p>사운드 넷 KC5<br />출시 예정<br />+4 Colors</p>
+                    </figure>
+                    <figure>
+                        <img src="./photo2.webp" alt="">
+                        <p>반도네온.S PC5<br />출시 예정<br />+4 Colors</p>
+                    </figure>
+                    <figure>
+                        <img src="./photo3.webp" alt="">
+                        <p>반도네온.S 01<br />출시 예정<br />+4 Colors</p>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="inner">
+                <ul class="list">
+                    <li><a href="">고객 서비스</a></li>
+                    <li><a href="">법적 고지</a></li>
+                    <li><a href="">소셜 미디어</a></li>
+                </ul>
+                <address>
+                    &copy; 2022 GENTLE MONSTER
+                </address>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
